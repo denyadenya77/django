@@ -1,4 +1,4 @@
 venv/*
-/Pybot3/__pycache__/*
-/Pybot3/venv/*
-/Pybot3/.idea/*
+db.sqlite3
+.idea/*
+__pycache__/
