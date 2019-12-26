@@ -25,7 +25,7 @@ SECRET_KEY = '5w#_^^#(unr=+9+3%(d6ivr#$k09o&bc$h0o)fb_#i)13+)he%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["thawing-ridge-47246.herokuapp.com"]
 
 
 # Application definition
