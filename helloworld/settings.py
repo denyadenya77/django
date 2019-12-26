@@ -76,9 +76,17 @@ WSGI_APPLICATION = 'helloworld.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    # }
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd82qavso2hgauu',
+        'USER': 'vxttrrwzkdeaol',
+        'PASSWORD': '367054ad01122101b1b5d9ee099e03253d212ec914e330378952dec6c67e5174',
+        'HOST': 'ec2-79-125-126-205.eu-west-1.compute.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -120,3 +128,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
+
+STATIC_ROOT = "/static/"
