@@ -6,10 +6,10 @@ from .models import BotTable
 
 
 def home_page_view(request):
-    x = request.GET
+    x = request.GET  # перехватываем запрос с содержащимся в нем ключом - code
     code = x['code']
 
     new_code = BotTable(code=code)
-    new_code.save()
+    new_code.save()  # сохраняем код в базу данных
 
-    return HttpResponse('Hola means hello in Spanish')
+    return HttpResponse('Your messages have been sent to the manager.')
