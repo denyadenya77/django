@@ -12,4 +12,7 @@ def home_page_view(request):
     new_code = BotTable(code=code)
     new_code.save()  # сохраняем код в базу данных
 
-    return HttpResponse('Your messages have been sent to the manager.')
+    return render(request, 'index.html')
+
+
+
