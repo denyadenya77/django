@@ -6,7 +6,7 @@ body {
     min-width: 320px;
     overflow-x: hidden;
     color: #fff;
-    background: url(img/elems.png), linear-gradient(#01b1b4, #1278ab) center no-repeat;
+    background: url(elems.png), linear-gradient(#01b1b4, #1278ab) center no-repeat;
     background-size: cover;
 }
 img {

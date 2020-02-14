@@ -8,14 +8,13 @@
     <title>go</title>
     <!-- Styles -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" rel="stylesheet">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <div class="wrapper">
         <div class="content">
-            <img src="css/icon.png" alt="">
+            <img src="{% static 'css/icon.png' %}" alt="">
             <p>Authorization successfully completed.</p>
             <p>Please return to Telegram and activate "getmessage" command.</p>
         </div>
